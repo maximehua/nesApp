@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
+import Ingredient from './Ingredient'
 import './App.css';
 import { Grid, Card, Image, Divider, Button } from 'semantic-ui-react'
 
 class App extends Component {
   render() {
     return (
-      <Grid columns={2}>
           <div className="App">
             <div className="App-header">
               Pick an ingredient!
             </div>
-              <Grid columns={6}>
-                    <Grid.Column>
+              <Card.Group itemsPerRow={6}>
                       <Card>
                         <Image src={require('../public/images/poulet.png')} />
                         <Card.Content>
@@ -20,8 +19,7 @@ class App extends Component {
                           </Card.Description>
                         </Card.Content>
                       </Card>
-                    </Grid.Column>
-                    <Grid.Column>
+
                       <Card>
                         <Image src={require('../public/images/beef.png')} />
                         <Card.Content>
@@ -30,8 +28,7 @@ class App extends Component {
                           </Card.Description>
                         </Card.Content>
                       </Card>
-                    </Grid.Column>
-                    <Grid.Column>
+
                       <Card>
                         <Image src={require('../public/images/lardons.png')} />
                         <Card.Content>
@@ -40,8 +37,7 @@ class App extends Component {
                           </Card.Description>
                         </Card.Content>
                       </Card>
-                    </Grid.Column>
-                    <Grid.Column>
+
                       <Card>
                         <Image src={require('../public/images/rice.png')} />
                         <Card.Content>
@@ -50,8 +46,7 @@ class App extends Component {
                           </Card.Description>
                         </Card.Content>
                       </Card>
-                    </Grid.Column>
-                    <Grid.Column>
+
                       <Card>
                         <Image src={require('../public/images/tomato.png')} />
                         <Card.Content>
@@ -60,8 +55,7 @@ class App extends Component {
                           </Card.Description>
                         </Card.Content>
                       </Card>
-                    </Grid.Column>
-                    <Grid.Column>
+
                       <Card>
                         <Image src={require('../public/images/carrots.png')} />
                         <Card.Content>
@@ -70,8 +64,7 @@ class App extends Component {
                           </Card.Description>
                         </Card.Content>
                       </Card>
-                    </Grid.Column>
-                    <Grid.Column>
+
                       <Card>
                         <Image src={require('../public/images/onions.png')} />
                         <Card.Content>
@@ -80,8 +73,7 @@ class App extends Component {
                           </Card.Description>
                         </Card.Content>
                       </Card>
-                    </Grid.Column>
-                    <Grid.Column>
+
                       <Card>
                         <Image src={require('../public/images/eggs.png')} />
                         <Card.Content>
@@ -90,8 +82,7 @@ class App extends Component {
                           </Card.Description>
                         </Card.Content>
                       </Card>
-                    </Grid.Column>
-                    <Grid.Column>
+
                       <Card>
                         <Image src={require('../public/images/potatoes.png')} />
                         <Card.Content>
@@ -100,8 +91,7 @@ class App extends Component {
                           </Card.Description>
                         </Card.Content>
                       </Card>
-                    </Grid.Column>
-                    <Grid.Column>
+
                       <Card>
                         <Image src={require('../public/images/salmon.png')} />
                         <Card.Content>
@@ -110,8 +100,7 @@ class App extends Component {
                           </Card.Description>
                         </Card.Content>
                       </Card>
-                    </Grid.Column>
-                    <Grid.Column>
+
                       <Card>
                         <Image src={require('../public/images/tendre-noix.png')} />
                         <Card.Content>
@@ -120,8 +109,7 @@ class App extends Component {
                           </Card.Description>
                         </Card.Content>
                       </Card>
-                    </Grid.Column>
-                    <Grid.Column>
+
                       <Card>
                         <Image src={require('../public/images/pizza.png')} />
                         <Card.Content>
@@ -130,8 +118,7 @@ class App extends Component {
                           </Card.Description>
                         </Card.Content>
                       </Card>
-                    </Grid.Column>
-                    <Grid.Column>
+
                       <Card>
                         <Image src={require('../public/images/mozzarella.png')} />
                         <Card.Content>
@@ -140,8 +127,7 @@ class App extends Component {
                           </Card.Description>
                         </Card.Content>
                       </Card>
-                    </Grid.Column>
-                    <Grid.Column>
+
                       <Card>
                         <Image src={require('../public/images/bacon.png')} />
                         <Card.Content>
@@ -150,8 +136,7 @@ class App extends Component {
                           </Card.Description>
                         </Card.Content>
                       </Card>
-                    </Grid.Column>
-                    <Grid.Column>
+
                       <Card>
                         <Image src={require('../public/images/kubor.png')} />
                         <Card.Content>
@@ -160,8 +145,7 @@ class App extends Component {
                           </Card.Description>
                         </Card.Content>
                       </Card>
-                    </Grid.Column>
-                    <Grid.Column>
+
                       <Card>
                         <Image src={require('../public/images/mushrooms.png')} />
                         <Card.Content>
@@ -170,8 +154,7 @@ class App extends Component {
                           </Card.Description>
                         </Card.Content>
                       </Card>
-                    </Grid.Column>
-                    <Grid.Column>
+
                       <Card>
                         <Image src={require('../public/images/pasta.png')} />
                         <Card.Content>
@@ -180,8 +163,7 @@ class App extends Component {
                           </Card.Description>
                         </Card.Content>
                       </Card>
-                    </Grid.Column>
-                    <Grid.Column>
+
                       <Card>
                         <Image src={require('../public/images/quiche.png')} />
                         <Card.Content>
@@ -190,55 +172,13 @@ class App extends Component {
                           </Card.Description>
                         </Card.Content>
                       </Card>
-                    </Grid.Column>
-              </Grid>
+              </Card.Group>
               <Divider horizontal> </Divider>
               <Button animated='vertical'>
                 <Button.Content hidden>Validate</Button.Content>
                 <Button.Content visible>Finished ?</Button.Content>
               </Button>
           </div>
-          <div className="Recipe">
-            <div className="Recipe-Header">
-              <p>Suggested Recipes</p>
-            </div>
-            <div className="Recipe-List">
-              <Card>
-                <Image src={require('../public/images/poulet.png')} />
-                <Card.Content>
-                  <Card.Header>
-                    Name of the recipe
-                  </Card.Header>
-                  <Card.Description>
-                    Decription of the recipe
-                  </Card.Description>
-                </Card.Content>
-              </Card>
-              <Card>
-                <Image src={require('../public/images/poulet.png')} />
-                <Card.Content>
-                  <Card.Header>
-                    Name of the recipe
-                  </Card.Header>
-                  <Card.Description>
-                    Decription of the recipe
-                  </Card.Description>
-                </Card.Content>
-              </Card>
-              <Card>
-                <Image src={require('../public/images/poulet.png')} />
-                <Card.Content>
-                  <Card.Header>
-                    Name of the recipe
-                  </Card.Header>
-                  <Card.Description>
-                    Decription of the recipe
-                  </Card.Description>
-                </Card.Content>
-              </Card>
-            </div>
-          </div>
-      </Grid>
     );
   }
 }
