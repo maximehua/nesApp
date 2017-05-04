@@ -13,6 +13,7 @@
   font-size: 2vh;
   margin-top: -0.21425em;
   line-height: 1.28571429em;
+  text-transform: capitalize;
 }
 
 /*--------------
@@ -25,4 +26,5 @@
   font-weight: 400;
   clear: both;
   color: @descriptionColor;
+  text-transform: capitalize;
 }

@@ -976,6 +976,7 @@ a.ui.card:hover,
   font-size: 2vh;
   margin-top: -0.21425em;
   line-height: 1.28571429em;
+  text-transform: capitalize;
 }
 
 /*--------------
@@ -988,4 +989,5 @@ a.ui.card:hover,
   font-weight: 400;
   clear: both;
   color: rgba(0, 0, 0, 0.68);
+  text-transform: capitalize;
 }

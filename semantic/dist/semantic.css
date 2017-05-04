@@ -670,7 +670,7 @@ input::selection {
 
 html,
 body {
-  height: 95%;
+  height: 100%;
 }
 /*!
  * # Semantic UI 2.2.10 - Button
@@ -20770,6 +20770,39 @@ ol.ui.horizontal.list li:before,
   margin-right: 0vw;
   margin-top: 0vh;
 }
+
+/*-------------------
+       Columns
+--------------------*/
+
+/* Standard 16 column */
+
+.ui.grid > .column:not(.row),
+.ui.grid > .row > .column {
+  padding-left: 0rem;
+  padding-right: 0rem;
+}
+
+.ui.grid > * {
+  padding-left: 0rem;
+  padding-right: 0rem;
+}
+
+/*-------------------
+       Columns
+--------------------*/
+
+/* Vertical padding when no rows */
+
+.ui.grid > .column:not(.row) {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+.ui.grid > .row > .column {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
 /*
  * # Semantic - Menu
  * http://github.com/semantic-org/semantic-ui/
@@ -26195,6 +26228,7 @@ a.ui.card:hover,
   font-size: 2vh;
   margin-top: -0.21425em;
   line-height: 1.28571429em;
+  text-transform: capitalize;
 }
 
 /*--------------
@@ -26207,6 +26241,7 @@ a.ui.card:hover,
   font-weight: 400;
   clear: both;
   color: rgba(0, 0, 0, 0.68);
+  text-transform: capitalize;
 }
 /*!
  * # Semantic UI 2.2.10 - Comment
