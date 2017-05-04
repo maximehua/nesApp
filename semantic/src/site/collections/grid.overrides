@@ -1,0 +1,43 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+/*******************************
+            Standard
+*******************************/
+.ui.grid {
+  margin-left: 0.5vw;
+  margin-right: 0vw;
+  margin-top: 0vh;
+}
+
+/*-------------------
+       Columns
+--------------------*/
+
+
+/* Standard 16 column */
+.ui.grid > .column:not(.row),
+.ui.grid > .row > .column {
+  padding-left: 0rem;
+  padding-right: 0rem;
+}
+.ui.grid > * {
+  padding-left: 0rem;
+  padding-right: 0rem;
+}
+
+/*-------------------
+       Columns
+--------------------*/
+
+
+/* Vertical padding when no rows */
+.ui.grid > .column:not(.row) {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+.ui.grid > .row > .column {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
